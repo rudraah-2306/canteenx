@@ -1,0 +1,16 @@
+__turbopack_load_page_chunks__("/orders", [
+  "static/chunks/04cc9_next_dist_compiled_20e81405._.js",
+  "static/chunks/04cc9_next_dist_shared_lib_fb87a6eb._.js",
+  "static/chunks/04cc9_next_dist_client_648cde22._.js",
+  "static/chunks/04cc9_next_dist_18ad1bfc._.js",
+  "static/chunks/04cc9_next_router_0ae48dca.js",
+  "static/chunks/04cc9_react_651c547a._.js",
+  "static/chunks/04cc9_react-dom_cjs_react-dom_development_0298c3e5.js",
+  "static/chunks/04cc9_react-dom_f68a8ff8._.js",
+  "static/chunks/node_modules_@supabase_auth-js_dist_module_e0400d86._.js",
+  "static/chunks/04cc9_framer-motion_dist_es_b3aff393._.js",
+  "static/chunks/_273b0f5a._.js",
+  "static/chunks/[root-of-the-server]__9d3934aa._.js",
+  "static/chunks/canteenx_frontend_pages_orders_2da965e7._.js",
+  "static/chunks/turbopack-canteenx_frontend_pages_orders_74f1b6f0._.js"
+])

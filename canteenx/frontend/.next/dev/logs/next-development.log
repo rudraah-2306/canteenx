@@ -1,0 +1,254 @@
+[00:00:01.385] Server  LOG     ✓ Ready in 906ms
+[00:00:13.894] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:03:30.575] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:07:40.487] Server  LOG     ✓ Compiled in 77ms
+[00:08:22.371] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:30:14.553] Server  LOG     ✓ Compiled in 49ms
+[00:31:52.648] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:33:58.263] Server  LOG     ✓ Compiled in 40ms
+[00:39:03.979] Server  LOG     ✓ Compiled in 17ms
+[00:39:35.390] Browser ERROR   Error fetching orders: column orders.createdAt does not exist
+[00:39:35.390] Browser ERROR   Error fetching orders: column orders.createdAt does not exist
+[00:40:09.663] Browser ERROR   Error fetching orders: column orders.createdAt does not exist
+[00:40:09.869] Browser ERROR   Error fetching orders: column orders.createdAt does not exist
+[00:51:05.464] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:11:54.382] Server  LOG     ✓ Compiled in 97ms
+[01:14:22.577] Server  LOG     ✓ Compiled in 41ms
+[01:14:31.977] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:17:51.390] Server  LOG     ✓ Compiled in 57ms
+[01:19:33.874] Server  LOG     ✓ Compiled in 64ms
+[01:19:34.568] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:19:34.568] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:19:37.555] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:19:37.555] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:20:19.564] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:20:19.564] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:21:31.558] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:21:31.558] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:21:31.558] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:21:31.558] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:21:35.851] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:21:36.567] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:21:36.567] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:22:27.389] Browser ERROR   {"code":"MODULE_UNPARSABLE"}
+[01:22:27.389] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:22:27.389] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:22:27.389] Browser ERROR   unhandledRejection: Error: Could not parse module '[project]/canteenx/frontend/pages/login.tsx'
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:22:27.389] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:22:27.389] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:22:27.560] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:22:27.560] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[01:22:27.560] Browser ERROR   ./canteenx/frontend/pages/login.tsx:133:27
+Parsing ecmascript source code failed
+  131 |                 <Lock className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+  132 |
+> 133 |             useEffect(() => {
+      |                           ^
+  134 |               if (isAuthenticated && user) {
+  135 |                 if (user.role === 'admin') {
+  136 |                   router.push('/admin');
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:22:27.560] Browser ERROR   ./canteenx/frontend/pages/login.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/canteenx/frontend/pages/login.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.

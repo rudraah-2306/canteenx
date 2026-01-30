@@ -1,0 +1,57 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+/* Removed @apply. Use Tailwind classes in components. */
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #f3f4f6 25%,
+    #e5e7eb 50%,
+    #f3f4f6 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Removed @apply. Use Tailwind classes in components. */

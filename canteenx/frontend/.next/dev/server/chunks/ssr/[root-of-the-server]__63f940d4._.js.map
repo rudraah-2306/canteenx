@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Rudraah/Desktop/Canteen/canteenx/frontend/pages/_document.tsx"],"sourcesContent":["import { Html, Head, Main, NextScript } from 'next/document';\r\n\r\nexport default function Document() {\r\n  return (\r\n    <Html lang=\"en\">\r\n      <Head>\r\n        <meta charSet=\"utf-8\" />\r\n        <link rel=\"icon\" href=\"/favicon.ico\" />\r\n        <meta name=\"theme-color\" content=\"#0c3d66\" />\r\n      </Head>\r\n      <body>\r\n        <Main />\r\n        <NextScript />\r\n      </body>\r\n    </Html>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,qKAAC,yJAAI;QAAC,MAAK;;0BACT,qKAAC,yJAAI;;kCACH,qKAAC;wBAAK,SAAQ;;;;;;kCACd,qKAAC;wBAAK,KAAI;wBAAO,MAAK;;;;;;kCACtB,qKAAC;wBAAK,MAAK;wBAAc,SAAQ;;;;;;;;;;;;0BAEnC,qKAAC;;kCACC,qKAAC,yJAAI;;;;;kCACL,qKAAC,+JAAU;;;;;;;;;;;;;;;;;AAInB"}}]
+}

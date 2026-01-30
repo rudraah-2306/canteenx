@@ -1,0 +1,26 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/cart": [
+      "static/chunks/04cc9_next_dist_compiled_20e81405._.js",
+      "static/chunks/04cc9_next_dist_shared_lib_b8f9fdf5._.js",
+      "static/chunks/04cc9_next_dist_client_1dec2aee._.js",
+      "static/chunks/04cc9_next_dist_18ad1bfc._.js",
+      "static/chunks/04cc9_next_3b0e5785._.js",
+      "static/chunks/04cc9_react_651c547a._.js",
+      "static/chunks/04cc9_react-dom_cjs_react-dom_development_0298c3e5.js",
+      "static/chunks/04cc9_react-dom_f68a8ff8._.js",
+      "static/chunks/node_modules_@supabase_auth-js_dist_module_e0400d86._.js",
+      "static/chunks/04cc9_framer-motion_dist_es_b3aff393._.js",
+      "static/chunks/_78ddd851._.js",
+      "static/chunks/[root-of-the-server]__91467f9f._.js",
+      "static/chunks/canteenx_frontend_pages_cart_2da965e7._.js",
+      "static/chunks/turbopack-canteenx_frontend_pages_cart_48c4f41e._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

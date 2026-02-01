@@ -36,8 +36,9 @@ export const useAuthStore = create<AuthStore>((set) => ({
   setUser: (user) => set({ user, isAuthenticated: !!user }),
   signUp: async (email, password, meta) => {
     set({ loading: true, error: null });
-    // Add is_approved: false to meta
-    const metaWithApproval = { ...meta, is_approved: false };
+    // Canteen owners don't need approval, students and teachers do
+    const needsApproval = meta?.role === 'student' || meta?.role === 'teacher';
+    const metaWithApproval = { ...meta, is_approved: !needsApproval };
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -46,6 +47,28 @@ export const useAuthStore = create<AuthStore>((set) => ({
     if (error) {
       set({ error: error.message, loading: false });
     } else {
+      // Create a profile entry for admin to manage
+      if (data.user) {
+        const { error: profileError } = await supabase.from('profiles').upsert({
+          id: data.user.id,
+          email: email.toLowerCase().trim(),
+          name: meta?.name || '',
+          role: meta?.role || 'student',
+          college_id: (meta?.collegeId || '').toUpperCase().trim(),
+          phone: (meta?.phone || '').trim(),
+          department: meta?.department || '',
+          position: meta?.position || '',
+          is_approved: !needsApproval,
+          created_at: new Date().toISOString(),
+        });
+        
+        if (profileError) {
+          console.error('Profile creation failed:', profileError);
+          // Still continue - profile will be created on order
+        } else {
+          console.log('Profile created successfully for:', data.user.id);
+        }
+      }
       set({ loading: false });
     }
   },
@@ -57,16 +80,34 @@ export const useAuthStore = create<AuthStore>((set) => ({
     } else {
       const supabaseUser = data.user;
       const meta = supabaseUser?.user_metadata || {};
-      // Check email confirmed
-      if (!supabaseUser?.email_confirmed_at) {
-        set({ error: 'Please confirm your email before logging in.', loading: false });
-        return;
+      
+      // Check approval status from profiles table ONLY (admin controls this)
+      if (meta.role === 'student' || meta.role === 'teacher') {
+        const { data: profileData, error: profileError } = await supabase
+          .from('profiles')
+          .select('is_approved')
+          .eq('id', supabaseUser?.id)
+          .single();
+        
+        console.log('Profile check:', { profileData, profileError, userId: supabaseUser?.id });
+        
+        // If no profile exists or is_approved is not true, block login
+        // User must have profile AND is_approved must be explicitly true
+        const isApproved = profileData?.is_approved === true;
+        
+        if (!profileData || !isApproved) {
+          // Sign out the user since they're not approved yet
+          await supabase.auth.signOut();
+          set({ 
+            error: 'Your registration is pending admin approval. Please wait for admin to verify your account.', 
+            loading: false,
+            user: null,
+            isAuthenticated: false
+          });
+          return;
+        }
       }
-      // Only require admin approval for student and teacher
-      if ((meta.role === 'student' || meta.role === 'teacher') && !meta.is_approved) {
-        set({ error: 'Your registration is pending admin approval.', loading: false });
-        return;
-      }
+      
       set({
         user: supabaseUser
           ? {
@@ -100,15 +141,18 @@ export const useCartStore = create<CartStore>((set, get) => ({
     set((state) => {
       const existingItem = state.items.find((i) => i.foodItemId === item.foodItemId);
       let newItems;
+      const maxQty = item.maxQuantity || 999;
 
       if (existingItem) {
+        // Don't exceed max quantity
+        const newQuantity = Math.min(existingItem.quantity + item.quantity, maxQty);
         newItems = state.items.map((i) =>
           i.foodItemId === item.foodItemId
-            ? { ...i, quantity: i.quantity + item.quantity }
+            ? { ...i, quantity: newQuantity, maxQuantity: maxQty }
             : i
         );
       } else {
-        newItems = [...state.items, item];
+        newItems = [...state.items, { ...item, maxQuantity: maxQty }];
       }
 
       const totalPrice = newItems.reduce((sum, i) => sum + i.price * i.quantity, 0);
@@ -122,8 +166,12 @@ export const useCartStore = create<CartStore>((set, get) => ({
     }),
   updateQuantity: (foodItemId, quantity) =>
     set((state) => {
+      const item = state.items.find((i) => i.foodItemId === foodItemId);
+      const maxQty = item?.maxQuantity || 999;
+      const newQuantity = Math.min(quantity, maxQty);
+      
       const newItems = state.items.map((i) =>
-        i.foodItemId === foodItemId ? { ...i, quantity } : i
+        i.foodItemId === foodItemId ? { ...i, quantity: newQuantity } : i
       );
       const totalPrice = newItems.reduce((sum, i) => sum + i.price * i.quantity, 0);
       return { items: newItems, totalPrice };

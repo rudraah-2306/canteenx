@@ -12,7 +12,8 @@ export interface User {
 }
 
 export interface FoodItem {
-  _id: string;
+  id: string;
+  _id?: string; // For backward compatibility with MongoDB
   name: string;
   description: string;
   price: number;
@@ -23,6 +24,7 @@ export interface FoodItem {
   preparationTime: number;
   isVegetarian: boolean;
   isVegan: boolean;
+  isSpicy?: boolean;
   rating: number;
   totalRatings: number;
 }
@@ -33,10 +35,12 @@ export interface CartItem {
   price: number;
   name: string;
   notes?: string;
+  maxQuantity?: number;
 }
 
 export interface Order {
-  _id: string;
+  id: string;
+  _id?: string; // For backward compatibility with MongoDB
   orderNumber: string;
   items: {
     foodItem: FoodItem;
